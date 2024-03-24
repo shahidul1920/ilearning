@@ -1,0 +1,115 @@
+header{
+    .navBer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom:var(--gray) 2px solid;
+        padding: 1.5rem;
+        .logo{
+            width: 205px;
+            height: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .nav{
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .logInf{
+            width: auto;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            .log{
+                background: var(--green);
+            }
+        }
+    }
+}
+
+.small_d_menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    background: var(--green);
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    .nav{
+        width: 20px;
+        visibility: hidden;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        font-size: 100%;
+        display: flex;
+        text-transform: uppercase;
+        li{
+            transition: all .3s;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+    }
+}
+.actvNav{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 90px;
+    background: var(--green);
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    padding: 2rem 0;
+    transition: all .3s ease-in-out;
+    .nav{
+        visibility: visible;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        font-size: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-transform: uppercase;
+        li{
+            transition: all .3s;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.hero{
+    padding-top: 90px;
+    text-align: center;
+    .container{
+        .text{
+            color: var(--black);
+            text-transform: capitalize;
+            h4{
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            h1{
+                font-size: 60px;
+                span{
+                    color: var(--green);
+                }
+            }
+        }
+    }
+}
