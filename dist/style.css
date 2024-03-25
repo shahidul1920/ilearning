@@ -196,6 +196,51 @@ header .navBer .logInf .log {
   color: var(--green);
 }
 
+.courseBoxMain {
+  margin: 0 auto;
+  margin-top: 175px;
+}
+.courseBoxMain .text {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.courseBoxMain .courseBox {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.courseBoxMain .courseBox .box {
+  width: 300px;
+  height: 250px;
+  background: var(--gray);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.courseBoxMain .courseBox .box .text h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.courseBoxMain .courseBox .box .text p {
+  font-size: 16px;
+}
+.courseBoxMain .courseBox .box .iconBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--green);
+  display: grid;
+  place-items: center;
+}
+
 @media (max-width: 900px) {
   .container {
     width: 100%;
