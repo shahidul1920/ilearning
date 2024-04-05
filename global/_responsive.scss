@@ -38,4 +38,24 @@
     .small_d_menu{
         display: block;
     }
+
+
+    .courseBoxMain{ 
+        .text{
+        font-size: 32px;
+        }
+        .courseBox{
+            .box{
+                width: 250px;
+                height: 200px;
+                .iconBox{
+                    width: 80px;
+                    height: 80px;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 }

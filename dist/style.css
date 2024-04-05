@@ -131,7 +131,6 @@ header .navBer .logInf .log {
   transition: all 0.3s ease-in-out;
 }
 .small_d_menu .nav {
-  width: 20px;
   visibility: hidden;
   list-style: none;
   align-items: center;
@@ -139,12 +138,14 @@ header .navBer .logInf .log {
   font-size: 100%;
   display: flex;
   text-transform: uppercase;
+  align-items: center;
 }
 .small_d_menu .nav li {
   transition: all 0.3s;
 }
 .small_d_menu .nav li:hover {
   font-weight: 600;
+  color: var(--pure);
 }
 
 .actvNav {
@@ -170,11 +171,12 @@ header .navBer .logInf .log {
   gap: 2rem;
   text-transform: uppercase;
 }
-.actvNav .nav li {
+.actvNav .nav li a {
   transition: all 0.3s;
 }
-.actvNav .nav li:hover {
+.actvNav .nav li a:hover {
   font-weight: 600;
+  color: var(--pure);
 }
 
 .hero {
@@ -278,5 +280,19 @@ header .navBer .logInf .log {
   }
   .small_d_menu {
     display: block;
+  }
+  .courseBoxMain .text {
+    font-size: 32px;
+  }
+  .courseBoxMain .courseBox .box {
+    width: 250px;
+    height: 200px;
+  }
+  .courseBoxMain .courseBox .box .iconBox {
+    width: 80px;
+    height: 80px;
+  }
+  .courseBoxMain .courseBox .box .iconBox img {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

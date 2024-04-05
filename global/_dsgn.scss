@@ -47,7 +47,7 @@ header{
     opacity: 1;
     transition: all .3s ease-in-out;
     .nav{
-        width: 20px;
+        //width: 20px;
         visibility: hidden;
         list-style: none;
         align-items: center;
@@ -55,10 +55,12 @@ header{
         font-size: 100%;
         display: flex;
         text-transform: uppercase;
+        align-items: center;
         li{
             transition: all .3s;
             &:hover{
                 font-weight: 600;
+                color: var(--pure);
             }
         }
     }
@@ -84,10 +86,11 @@ header{
         flex-direction: column;
         gap: 2rem;
         text-transform: uppercase;
-        li{
+        li a{
             transition: all .3s;
             &:hover{
                 font-weight: 600;
+                color: var(--pure);
             }
         }
     }
